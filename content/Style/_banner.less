@@ -1,0 +1,39 @@
+﻿@banner-text-color: #f2f2f2;
+@banner-darken-percentage: 30%;
+
+.banner {
+    background-image: url('../Images/b.png');
+    min-height: 300px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+
+    .title {
+        color:@banner-text-color ;
+        font-size: 30pt;
+        letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+        color: darken(@banner-text-color, @banner-darken-percentage);
+        font-size: 16pt;
+        letter-spacing: 0.5px;
+    }
+
+    #divPL {
+        vertical-align: middle;
+        letter-spacing: 0.5px;
+
+        div {
+            display: inline-block;
+            color: @banner-text-color;
+            padding: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .gravatar {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 30px;
+    }
+}

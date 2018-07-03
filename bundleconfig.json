@@ -1,0 +1,28 @@
+[
+  {
+    "outputFileName": "Scripts/App/app.js",
+    "inputFiles": [
+      //Logger
+      "App/Modules/Logger/loggerModule.js",
+      "App/Modules/Logger/loggerService.js",
+
+      //Core
+      "App/Modules/Core/appModule.js",
+      "App/Modules/Core/appRoute.js",
+
+      //Main
+      "App/Shared/mainController.js",
+
+      //Home
+      "App/Modules/Home/homeController.js",
+      "App/Modules/Home/projectCardDirective.js",
+      "App/Modules/Home/projectService.js",
+      "App/Modules/Home/twitterPanelDirective.js",
+
+      //Shared
+      "App/Shared/headerDirective.js",
+      "App/Shared/collapsablePanelDirective.js",
+      "App/Shared/footerDirective.js"
+    ]
+  }
+]

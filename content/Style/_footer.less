@@ -1,0 +1,38 @@
+﻿@background-color: #222222;
+@text-color: #999;
+@lighten-percentage: 30%;
+@darken-percentage: 20%;
+
+.footer {
+    color: @text-color;
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    background-color: @background-color;
+    padding: 20px;
+    min-height: 200px;
+    position: relative;
+    margin-top: -200px;
+
+    .header {
+        color: lighten(@text-color, @lighten-percentage);
+        font-size: 10pt;
+        font-weight: bold;
+        line-height: 35px;
+    }
+
+    p {
+        height: 15px;
+    }
+
+    a {
+        font-size: 9pt;
+        color: @text-color;
+    }
+
+    .author {
+        color: darken(@text-color, @darken-percentage);
+        text-align: center;
+        margin-top: 15px;
+    }
+}
