@@ -13,7 +13,7 @@
   line-height: 30px !important;
 }
 .banner {
-  background-image: url('../Images/b.png');
+  background-image: url('../images/b.png');
   min-height: 300px;
   margin-bottom: 15px;
   padding-top: 30px;
@@ -105,31 +105,31 @@ ui-view.ng-enter-active {
   bottom: 12px;
 }
 .ct-social-linkedin {
-  background-image: url('../Images/linkedin.png');
+  background-image: url('../images/linkedin.png');
   display: block;
   height: 50px;
   width: 50px;
 }
 .ct-social-twitter {
-  background-image: url('../Images/twitter.png');
+  background-image: url('../images/twitter.png');
   display: block;
   height: 50px;
   width: 50px;
 }
 .ct-social-github {
-  background-image: url('../Images/github.png');
+  background-image: url('../images/github.png');
   display: block;
   height: 50px;
   width: 50px;
 }
 .ct-social-fb {
-  background-image: url('../Images/fb.png');
+  background-image: url('../images/fb.png');
   display: block;
   height: 50px;
   width: 50px;
 }
 .ct-social-wordpress {
-  background-image: url('../Images/wordpress.png');
+  background-image: url('../images/wordpress.png');
   display: block;
   height: 50px;
   width: 50px;
