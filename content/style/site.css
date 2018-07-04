@@ -1,4 +1,4 @@
-﻿.navbar-brand > span > img {
+﻿.navbar-brand > img {
   width: 30px;
   height: 30px;
   border-radius: 2px;
@@ -9,8 +9,7 @@
   font-family: ubuntu;
   font-size: 30px !important;
   font-weight: bolder !important;
-  height: 61px !important;
-  line-height: 30px !important;
+  color: #777 !important;
 }
 .banner {
   background-image: url('../images/b.png');
@@ -57,14 +56,12 @@ ui-view.ng-enter-active {
 }
 .footer {
   color: #999;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
   background-color: #222222;
   padding: 20px;
   min-height: 200px;
   position: relative;
-  margin-top: -200px;
 }
 .footer .header {
   color: #e5e5e5;
@@ -144,13 +141,9 @@ body,
 #container {
   font-family: "Helvetica Neue", Helvetica, sans-serif !important;
   height: 100%;
-}
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  font-size: 12pt;
 }
 body > #container {
   height: auto;
   min-height: 100%;
-  padding-bottom: 220px;
 }
