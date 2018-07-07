@@ -1,3 +1,5 @@
 # Welcome to Codetecuico
 
-[codetecuico.github.io](https://codetecuico.github.io)
+[https://codetecuico.com](https://codetecuico.github.io)
+
+Email: dev@codetecuico.com
