@@ -1,12 +1,10 @@
 ﻿(function () {
-
     var mainController = function (logger) {
-        logger.info('Welcome to Codetecuico');
+        logger.info("Welcome to Codetecuico");
     };
 
-    mainController.$inject = ['logger'];
+    mainController.$inject = ["logger"];
 
-    angular.module('app')
-        .controller('mainController', mainController)
-
+    angular.module("app")
+        .controller("mainController", mainController);
 }());

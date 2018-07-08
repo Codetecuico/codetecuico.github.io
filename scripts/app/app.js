@@ -1,14 +1,10 @@
 (function () {
-
-    angular.module('ctLogger', []);
-
+    angular.module("ctLogger", []);
 }());
 (function () {
+    var app = angular.module("ctLogger");
 
-    var app = angular.module('ctLogger');
-
-    app.factory('logger', function () {
-
+    app.factory("logger", function () {
         toastr.options = {
             //"debug": false,
             "positionClass": "toast-bottom-right"
@@ -35,13 +31,11 @@
             toastr.warning(msg);
         };
 
-
         // Developer code
         var isDebugMode = true;
-        var debugPrefix = 'DEBUG: ';
+        var debugPrefix = "DEBUG: ";
 
         var _debug = {
-
             success: function (msg) {
                 if (!isDebugMode) {
                     return
@@ -76,9 +70,7 @@
             error: _error,
             warning: _warning
         }
-
     });
-
 }());
 (function () {
 
@@ -88,12 +80,10 @@
 
 }());
 (function () {
-
     var app = angular.module("app");
 
     app.config(function ($stateProvider, $urlRouterProvider) {
-
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise("/");
 
         $stateProvider
             .state("home", {
@@ -102,39 +92,34 @@
                 templateUrl: "/app/modules/home/home.html"
             })
     });
-
 }());
 (function () {
-
     var mainController = function (logger) {
-        logger.info('Welcome to Codetecuico');
+        logger.info("Welcome to Codetecuico");
     };
 
-    mainController.$inject = ['logger'];
+    mainController.$inject = ["logger"];
 
-    angular.module('app')
-        .controller('mainController', mainController)
-
+    angular.module("app")
+        .controller("mainController", mainController);
 }());
 (function () {
-
     var app = angular.module("app");
 
     var homeController = function ($scope, projectService) {
-
         var d = $("#divPL");
         d.children().on("mouseover", function () {
             $(this).stop(true, true).animate({ "padding-top": "1px" }, 200);
             $(this).css("cursor", "pointer");
         }).on("mouseleave", function () {
             $(this).stop(true, true).animate({ "padding-top": "10px" }, 200);
-        })
-         
+        });
+
         //Populating project list
-        $scope.getProjects = function () { 
+        $scope.getProjects = function () {
             projectService.getProjects()
                 .then(function (data) {
-                    $scope.projects = data 
+                    $scope.projects = data;
                 }, null);
         };
 
@@ -142,13 +127,11 @@
     };
 
     app.controller("homeController", ["$scope", "projectService", homeController]);
-
 }());
 (function () {
-
     var app = angular.module("app");
 
-    app.directive('projectCard', function () {
+    app.directive("projectCard", function () {
         return {
             restrict: "E",
             templateUrl: "/app/modules/home/projectCard.html",
@@ -156,11 +139,9 @@
                 project: "="
             },
             controller: function ($scope) {
-
             }
         }
     });
-
 }());
 (function () {
 
@@ -203,10 +184,9 @@
 
 }());
 (function () {
-
     var app = angular.module("app");
 
-    app.directive('twitterPanel', function () {
+    app.directive("twitterPanel", function () {
         return {
             restrict: "E",
             transclude: true,
@@ -217,7 +197,6 @@
             }
         }
     });
-
 }());
 (function () {
     var app = angular.module("app");
@@ -247,7 +226,7 @@
                 ph.on("click", function () {
                     $(this).next().stop(true, true).slideToggle("fast");
                     $(this).find("span").toggleClass("glyphicon-menu-up glyphicon-menu-down");
-                })
+                });
             }
         }
     });

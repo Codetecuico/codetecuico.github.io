@@ -1,5 +1,3 @@
 ﻿(function () {
-
-    angular.module('ctLogger', []);
-
+    angular.module("ctLogger", []);
 }());

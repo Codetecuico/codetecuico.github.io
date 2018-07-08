@@ -1,8 +1,7 @@
 ﻿(function () {
-
     var app = angular.module("app");
 
-    app.directive('twitterPanel', function () {
+    app.directive("twitterPanel", function () {
         return {
             restrict: "E",
             transclude: true,
@@ -13,5 +12,4 @@
             }
         }
     });
-
 }());

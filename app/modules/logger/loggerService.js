@@ -1,9 +1,7 @@
 ﻿(function () {
+    var app = angular.module("ctLogger");
 
-    var app = angular.module('ctLogger');
-
-    app.factory('logger', function () {
-
+    app.factory("logger", function () {
         toastr.options = {
             //"debug": false,
             "positionClass": "toast-bottom-right"
@@ -30,13 +28,11 @@
             toastr.warning(msg);
         };
 
-
         // Developer code
         var isDebugMode = true;
-        var debugPrefix = 'DEBUG: ';
+        var debugPrefix = "DEBUG: ";
 
         var _debug = {
-
             success: function (msg) {
                 if (!isDebugMode) {
                     return
@@ -71,7 +67,5 @@
             error: _error,
             warning: _warning
         }
-
     });
-
 }());
