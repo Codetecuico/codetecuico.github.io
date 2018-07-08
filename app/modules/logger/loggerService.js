@@ -10,7 +10,7 @@
             //"fadeOut": 1000,
             //"timeOut": 5000,
             //"extendedTimeOut": 1000
-        }
+        };
 
         var _success = function (msg) {
             toastr.success(msg);
@@ -35,26 +35,26 @@
         var _debug = {
             success: function (msg) {
                 if (!isDebugMode) {
-                    return
+                    return;
                 }
                 toastr.success(debugPrefix + msg);
             },
 
             info: function (msg) {
                 if (!isDebugMode) {
-                    return
+                    return;
                 }
                 toastr.info(debugPrefix + msg);
             },
             error: function (msg) {
                 if (!isDebugMode) {
-                    return
+                    return;
                 }
                 toastr.error(debugPrefix + msg);
             },
             warning: function (msg) {
                 if (!isDebugMode) {
-                    return
+                    return;
                 }
                 toastr.warning(debugPrefix + msg);
             }
