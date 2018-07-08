@@ -66,6 +66,6 @@
             info: _info,
             error: _error,
             warning: _warning
-        }
+        };
     });
 }());

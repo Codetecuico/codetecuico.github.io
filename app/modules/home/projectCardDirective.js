@@ -10,6 +10,6 @@
             },
             controller: function ($scope) {
             }
-        }
+        };
     });
 }());

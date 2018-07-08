@@ -8,6 +8,6 @@
             scope: {},
             controller: function ($scope) {
             }
-        }
+        };
     });
 }());

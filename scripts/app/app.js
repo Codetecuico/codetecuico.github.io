@@ -69,7 +69,7 @@
             info: _info,
             error: _error,
             warning: _warning
-        }
+        };
     });
 }());
 (function () {
@@ -140,7 +140,7 @@
             },
             controller: function ($scope) {
             }
-        }
+        };
     });
 }());
 (function () {
@@ -193,9 +193,9 @@
             templateUrl: "/app/modules/home/twitterPanel.html",
             scope: {},
             controller: function ($scope) {
-                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? "http" : "https"; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
             }
-        }
+        };
     });
 }());
 (function () {
@@ -208,7 +208,7 @@
             scope: {},
             controller: function ($scope) {
             }
-        }
+        };
     });
 }());
 (function () {
@@ -228,7 +228,7 @@
                     $(this).find("span").toggleClass("glyphicon-menu-up glyphicon-menu-down");
                 });
             }
-        }
+        };
     });
 }());
 (function () {
@@ -241,6 +241,6 @@
             scope: {},
             controller: function ($scope) {
             }
-        }
+        };
     });
 }());
