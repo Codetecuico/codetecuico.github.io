@@ -2,6 +2,7 @@
 (function () {
     angular.module("ctLogger", []);
 }());
+/* global toastr */
 (function () {
     var app = angular.module("ctLogger");
 

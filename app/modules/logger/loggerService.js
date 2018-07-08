@@ -1,4 +1,5 @@
-﻿(function () {
+﻿/* global toastr */
+(function () {
     var app = angular.module("ctLogger");
 
     app.factory("logger", function () {
