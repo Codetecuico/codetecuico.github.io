@@ -38,26 +38,26 @@
         var debugPrefix = "DEBUG: ";
 
         var _debug = {
-            success: function (msg) {
+            success(msg) {
                 if (!isDebugMode) {
                     return;
                 }
                 toastr.success(debugPrefix + msg);
             },
 
-            info: function (msg) {
+            info(msg) {
                 if (!isDebugMode) {
                     return;
                 }
                 toastr.info(debugPrefix + msg);
             },
-            error: function (msg) {
+            error(msg) {
                 if (!isDebugMode) {
                     return;
                 }
                 toastr.error(debugPrefix + msg);
             },
-            warning: function (msg) {
+            warning(msg) {
                 if (!isDebugMode) {
                     return;
                 }
@@ -223,11 +223,11 @@
             templateUrl: "/app/shared/collapsablePanel.html",
             scope: { title: "@" },
             controller: function ($scope) {
-                var ph = $(".panel-heading");
+                var ph = $(".card-header");
                 ph.off("click"); //clear on click event
                 ph.on("click", function () {
                     $(this).next().stop(true, true).slideToggle("fast");
-                    $(this).find("span").toggleClass("glyphicon-menu-up glyphicon-menu-down");
+                    $(this).find("i").toggleClass("octicon-chevron-up octicon-chevron-down");
                 });
             }
         };

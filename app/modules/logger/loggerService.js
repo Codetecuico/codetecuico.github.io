@@ -34,26 +34,26 @@
         var debugPrefix = "DEBUG: ";
 
         var _debug = {
-            success: function (msg) {
+            success(msg) {
                 if (!isDebugMode) {
                     return;
                 }
                 toastr.success(debugPrefix + msg);
             },
 
-            info: function (msg) {
+            info(msg) {
                 if (!isDebugMode) {
                     return;
                 }
                 toastr.info(debugPrefix + msg);
             },
-            error: function (msg) {
+            error(msg) {
                 if (!isDebugMode) {
                     return;
                 }
                 toastr.error(debugPrefix + msg);
             },
-            warning: function (msg) {
+            warning(msg) {
                 if (!isDebugMode) {
                     return;
                 }

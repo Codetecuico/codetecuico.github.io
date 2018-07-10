@@ -43,7 +43,7 @@ ui-view.ng-enter-active {
 #toast-container > div {
   opacity: 1 !important;
 }
-.footer {
+footer {
   color: #999;
   font-size: 12px;
   letter-spacing: 0.5px;
@@ -52,16 +52,16 @@ ui-view.ng-enter-active {
   min-height: 200px;
   position: relative;
 }
-.footer .header {
+footer .header {
   color: #e5e5e5;
   font-size: 10pt;
   font-weight: bold;
   line-height: 35px;
 }
-.footer p {
+footer p {
   height: 15px;
 }
-.footer a {
+footer a {
   font-size: 9pt;
   color: #999;
 }
