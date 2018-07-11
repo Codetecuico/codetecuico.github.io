@@ -1,4 +1,5 @@
-﻿(function () {
+﻿/* global angular*/
+(function () {
     var app = angular.module("app");
 
     app.config(function ($stateProvider, $urlRouterProvider) {

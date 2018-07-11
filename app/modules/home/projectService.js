@@ -1,12 +1,10 @@
-﻿(function () {
-
+﻿/* global angular*/
+(function () {
     var projectService = function ($http, $q) {
-
-        var projects = []; 
+        var projects = [];
         var api = "/app/database/projects.json";
-          
-        var _getProjects = function () {
 
+        var _getProjects = function () {
             var deferred = $q.defer();
 
             $http.get(api)
@@ -14,7 +12,7 @@
                     // success
                     angular.copy(result.data, projects);
 
-                    //sort 
+                    //sort
                     projects.sort(function (a, b) {
                         return new Date(a.sortOrder) - new Date(b.sortOrder);
                     });
@@ -27,8 +25,8 @@
 
             return deferred.promise;
         };
-         
-        return { 
+
+        return {
             getProjects: _getProjects,
         };
     };
@@ -36,5 +34,4 @@
     var module = angular.module("app");
 
     module.factory("projectService", ["$http", "$q", projectService]);
-
 }());

@@ -1,7 +1,6 @@
-﻿(function () {
-
+﻿/* global angular*/
+(function () {
     angular.module("app", ["ui.router",
-                            "ngAnimate",
-                            "ctLogger"]);
-
+        "ngAnimate",
+        "ctLogger"]);
 }());

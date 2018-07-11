@@ -74,13 +74,13 @@
         };
     });
 }());
+/* global angular*/
 (function () {
-
     angular.module("app", ["ui.router",
-                            "ngAnimate",
-                            "ctLogger"]);
-
+        "ngAnimate",
+        "ctLogger"]);
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 
@@ -95,6 +95,7 @@
             });
     });
 }());
+/* global angular*/
 (function () {
     var mainController = function (logger) {
         logger.info("Welcome to Codetecuico");
@@ -105,6 +106,7 @@
     angular.module("app")
         .controller("mainController", mainController);
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 
@@ -130,6 +132,7 @@
 
     app.controller("homeController", ["$scope", "projectService", homeController]);
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 
@@ -145,15 +148,13 @@
         };
     });
 }());
+/* global angular*/
 (function () {
-
     var projectService = function ($http, $q) {
-
-        var projects = []; 
+        var projects = [];
         var api = "/app/database/projects.json";
-          
-        var _getProjects = function () {
 
+        var _getProjects = function () {
             var deferred = $q.defer();
 
             $http.get(api)
@@ -161,7 +162,7 @@
                     // success
                     angular.copy(result.data, projects);
 
-                    //sort 
+                    //sort
                     projects.sort(function (a, b) {
                         return new Date(a.sortOrder) - new Date(b.sortOrder);
                     });
@@ -174,8 +175,8 @@
 
             return deferred.promise;
         };
-         
-        return { 
+
+        return {
             getProjects: _getProjects,
         };
     };
@@ -183,8 +184,8 @@
     var module = angular.module("app");
 
     module.factory("projectService", ["$http", "$q", projectService]);
-
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 
@@ -195,11 +196,22 @@
             templateUrl: "/app/modules/home/twitterPanel.html",
             scope: {},
             controller($scope) {
-                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? "http" : "https"; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+                !function (d, s, id) {
+                    var js,
+                        fjs = (d.getElementsByTagName(s)[0]),
+                        p = (/^http:/.test(d.location) ? "http" : "https");
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
             }
         };
     });
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 
@@ -213,6 +225,7 @@
         };
     });
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 
@@ -233,6 +246,7 @@
         };
     });
 }());
+/* global angular*/
 (function () {
     var app = angular.module("app");
 

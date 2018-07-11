@@ -115,11 +115,6 @@ footer a {
   height: 50px;
   width: 50px;
 }
-.img-thumbnail,
-.panel,
-.panel-heading {
-  border-radius: 0 !important;
-}
 html,
 body,
 #container {

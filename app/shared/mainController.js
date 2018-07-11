@@ -1,4 +1,5 @@
-﻿(function () {
+﻿/* global angular*/
+(function () {
     var mainController = function (logger) {
         logger.info("Welcome to Codetecuico");
     };
