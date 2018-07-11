@@ -1,4 +1,4 @@
-﻿/* global toastr */
+﻿/* global angular, toastr */
 (function () {
     var app = angular.module("ctLogger");
 

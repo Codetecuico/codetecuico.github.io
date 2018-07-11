@@ -2,7 +2,7 @@
 (function () {
     angular.module("ctLogger", []);
 }());
-/* global toastr */
+/* global angular, toastr */
 (function () {
     var app = angular.module("ctLogger");
 
@@ -196,7 +196,7 @@
             templateUrl: "/app/modules/home/twitterPanel.html",
             scope: {},
             controller($scope) {
-                !function (d, s, id) {
+                (!function (d, s, id) {
                     var js,
                         fjs = (d.getElementsByTagName(s)[0]),
                         p = (/^http:/.test(d.location) ? "http" : "https");
@@ -206,7 +206,7 @@
                         js.src = p + "://platform.twitter.com/widgets.js";
                         fjs.parentNode.insertBefore(js, fjs);
                     }
-                }(document, "script", "twitter-wjs");
+                }(document, "script", "twitter-wjs"));
             }
         };
     });
