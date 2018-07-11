@@ -9,7 +9,7 @@
             templateUrl: "/app/modules/home/twitterPanel.html",
             scope: {},
             controller($scope) {
-                (!function (d, s, id) {
+                !(function (d, s, id) {
                     var js,
                         fjs = (d.getElementsByTagName(s)[0]),
                         p = (/^http:/.test(d.location) ? "http" : "https");

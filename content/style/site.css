@@ -7,9 +7,8 @@
 }
 .navbar-brand {
   font-family: ubuntu;
-  font-size: 30px !important;
-  font-weight: bolder !important;
-  color: #777 !important;
+  font-size: 30px;
+  font-weight: bolder;
 }
 .banner {
   background-image: url('../images/b.png');
@@ -114,6 +113,10 @@ footer a {
   display: block;
   height: 50px;
   width: 50px;
+}
+.img-about {
+  height: 400px;
+  width: 100%;
 }
 html,
 body,

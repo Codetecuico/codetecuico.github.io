@@ -10,6 +10,11 @@
                 url: "/",
                 controller: "homeController",
                 templateUrl: "/app/modules/home/home.html"
+            })
+            .state("about", {
+                url: "/about",
+                controller: "aboutController",
+                templateUrl: "/app/modules/about/about.html"
             });
     });
 }());
