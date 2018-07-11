@@ -6,7 +6,7 @@
             restrict: "E",
             templateUrl: "/app/shared/header.html",
             scope: {},
-            controller: function ($scope) {
+            controller($scope) {
             }
         };
     });

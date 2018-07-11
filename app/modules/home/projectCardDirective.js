@@ -8,7 +8,7 @@
             scope: {
                 project: "="
             },
-            controller: function ($scope) {
+            controller($scope) {
             }
         };
     });

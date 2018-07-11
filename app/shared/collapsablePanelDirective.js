@@ -7,7 +7,7 @@
             transclude: true,
             templateUrl: "/app/shared/collapsablePanel.html",
             scope: { title: "@" },
-            controller: function ($scope) {
+            controller($scope) {
                 var ph = $(".card-header");
                 ph.off("click"); //clear on click event
                 ph.on("click", function () {

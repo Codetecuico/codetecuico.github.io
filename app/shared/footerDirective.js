@@ -6,7 +6,7 @@
             restrict: "E",
             templateUrl: "/app/shared/footer.html",
             scope: {},
-            controller: function ($scope) {
+            controller($scope) {
             }
         };
     });

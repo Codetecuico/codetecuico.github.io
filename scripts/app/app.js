@@ -140,7 +140,7 @@
             scope: {
                 project: "="
             },
-            controller: function ($scope) {
+            controller($scope) {
             }
         };
     });
@@ -194,7 +194,7 @@
             transclude: true,
             templateUrl: "/app/modules/home/twitterPanel.html",
             scope: {},
-            controller: function ($scope) {
+            controller($scope) {
                 !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? "http" : "https"; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
             }
         };
@@ -208,7 +208,7 @@
             restrict: "E",
             templateUrl: "/app/shared/header.html",
             scope: {},
-            controller: function ($scope) {
+            controller($scope) {
             }
         };
     });
@@ -222,7 +222,7 @@
             transclude: true,
             templateUrl: "/app/shared/collapsablePanel.html",
             scope: { title: "@" },
-            controller: function ($scope) {
+            controller($scope) {
                 var ph = $(".card-header");
                 ph.off("click"); //clear on click event
                 ph.on("click", function () {
@@ -241,7 +241,7 @@
             restrict: "E",
             templateUrl: "/app/shared/footer.html",
             scope: {},
-            controller: function ($scope) {
+            controller($scope) {
             }
         };
     });
