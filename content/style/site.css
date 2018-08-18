@@ -39,7 +39,7 @@ ui-view.ng-enter-active {
   opacity: 1;
 }
 #toast-container > div {
-  opacity: 1 !important;
+  opacity: 1;
 }
 footer {
   color: #999;
