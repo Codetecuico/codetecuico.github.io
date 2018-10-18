@@ -88,6 +88,9 @@ footer a {
   bottom: 14px;
   left: -5px;
 }
+.section-header .title span i {
+  bottom: 0;
+}
 .ct-social-linkedin {
   background-image: url('../images/linkedin.png');
   display: block;
