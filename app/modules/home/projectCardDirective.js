@@ -7,7 +7,8 @@
             restrict: "E",
             templateUrl: "/app/modules/home/projectCard.html",
             scope: {
-                project: "="
+                name: "@",
+                url: "@"
             },
             controller($scope) {
             }
