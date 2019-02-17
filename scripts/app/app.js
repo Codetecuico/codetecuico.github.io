@@ -165,7 +165,8 @@
             restrict: "E",
             templateUrl: "/app/modules/home/projectCard.html",
             scope: {
-                name: "@",
+                title: "@",
+                description: "@",
                 url: "@"
             },
             controller($scope) {
