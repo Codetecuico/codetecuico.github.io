@@ -125,6 +125,10 @@ footer a {
   height: 400px;
   width: 100%;
 }
+.img-cert {
+  height: 100px;
+  width: 100px;
+}
 html,
 body,
 #container {
