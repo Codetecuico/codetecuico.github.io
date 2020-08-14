@@ -86,10 +86,17 @@ footer a {
   text-transform: uppercase;
   letter-spacing: 1px;
   bottom: 14px;
-  left: -5px;
+  left: 25px;
 }
 .section-header .title span i {
   bottom: 0;
+}
+.section-header .title em {
+  background-color: #fff;
+  color: #999;
+  padding-left: 10px;
+  position: absolute;
+  margin-top: -8px;
 }
 .ct-social-linkedin {
   background-image: url('../images/linkedin.png');
