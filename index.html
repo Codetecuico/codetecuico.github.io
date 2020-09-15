@@ -16,17 +16,17 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#555555">
     <link rel="stylesheet" href="content/bootstrap.min.css" />
     <link rel="stylesheet" href="content/style/site.css" />
-    <link rel="stylesheet" href="packages/toastr.2.1.1/content/content/toastr.min.css" />
+    <link rel="stylesheet" href="content/toastr.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css" />
     <link rel="stylesheet" href="content/animate.min.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74120092-1"></script>
-    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-74120092-1');</script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-74120092-1');</script>
     <script>
-        var appInsights = window.appInsights || function (a) {function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c}({instrumentationKey: "f227a60c-1bda-48e8-819c-a5353f6e00d6"});
+        var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c }({ instrumentationKey: "f227a60c-1bda-48e8-819c-a5353f6e00d6" });
         window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
     </script>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery-3.5.1.min.js"></script>
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-ui-router.js"></script>
     <script src="scripts/angular-animate.min.js"></script>
@@ -37,7 +37,7 @@
         <div ui-view=""></div>
     </div>
     <ct-footer></ct-footer>
-    <script src="packages/toastr.2.1.1/content/scripts/toastr.min.js"></script>
+    <script src="scripts/toastr.min.js"></script>
     <script src="scripts/app/app.js"></script>
 </body>
 </html>
